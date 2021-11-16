@@ -2,9 +2,9 @@ import{User_name,mangSo} from './user.js'
 import * as user from './user.js'
 import Person from './user.js'
 import {tong as sum} from './user.js'
-console.log(User_name);
+// console.log(User_name);
 console.log(mangSo);
-console.log(user.User_name);
+// console.log(user.User_name);
 console.log(user.mangSo);
 
 sum(10,5);
