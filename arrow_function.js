@@ -322,32 +322,57 @@
 
 // Class 
 
-// es6
-class person{
-    constructor(id,name,age){
-        this.id = id;
-        this.name = name;
-        this.age = age;
-    }
-    infor(){
-        console.log(this.id+' - '+this.name+' - '+this.age);
-    }
-}
-var person1 = new person(1,'A',21);
-var person2 = new person(2,'B',22);
-// person1.infor();
-// person2.infor();
+// // es6
+// class person{
+//     constructor(id,name,age){
+//         this.id = id;
+//         this.name = name;
+//         this.age = age;
+//     }
+//     infor(){
+//         console.log(this.id+' - '+this.name+' - '+this.age);
+//     }
+// }
+// var person1 = new person(1,'A',21);
+// var person2 = new person(2,'B',22);
+// // person1.infor();
+// // person2.infor();
 
-// ket thua
-class Student extends person{
-    constructor(lop,id,name,age){
-        super(id,name,age);
-        this.lop = lop;
-    }
-    info(){
-        super.infor();
-        console.log(this.lop);
+// // ket thua
+// class Student extends person{
+//     constructor(lop,id,name,age){
+//         super(id,name,age);
+//         this.lop = lop;
+//     }
+//     info(){
+//         super.infor();
+//         console.log(this.lop);
+//     }
+// }
+// var student =new Student('Lop 1',1,'Phuong',22);
+// student.info();
+
+
+var personA = {
+    name: 'A',
+    age: 20,
+    address: 'Ha Noi',
+    talk: function(){
+        return this.name + " Talk About "+this.address+ " .age "+this.age;
+    },
+    infor:function(){
+        return this.name + " Talk About "+this.address+ " .age "+this.age;
     }
 }
-var student =new Student('Lop 1',1,'Phuong',22);
-student.info();
+// console.log(personA.name);
+// console.log(personA.talk());
+// const{name,age} = personA;
+// console.log(name);
+// console.log(age);
+// let{talk} = personA;
+// console.log(talk.bind(personA)());
+
+let {infor} = personA;
+console.log(infor.bind(personA)());
+const{address,...other} = personA;
+console.log(other);
