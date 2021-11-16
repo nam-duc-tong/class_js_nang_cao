@@ -352,18 +352,18 @@
 // var student =new Student('Lop 1',1,'Phuong',22);
 // student.info();
 
-
-var personA = {
-    name: 'A',
-    age: 20,
-    address: 'Ha Noi',
-    talk: function(){
-        return this.name + " Talk About "+this.address+ " .age "+this.age;
-    },
-    infor:function(){
-        return this.name + " Talk About "+this.address+ " .age "+this.age;
-    }
-}
+// object properties access
+// var personA = {
+//     name: 'A',
+//     age: 20,
+//     address: 'Ha Noi',
+//     talk: function(){
+//         return this.name + " Talk About "+this.address+ " .age "+this.age;
+//     },
+//     infor:function(){
+//         return this.name + " Talk About "+this.address+ " .age "+this.age;
+//     }
+// }
 // console.log(personA.name);
 // console.log(personA.talk());
 // const{name,age} = personA;
@@ -372,7 +372,38 @@ var personA = {
 // let{talk} = personA;
 // console.log(talk.bind(personA)());
 
-let {infor} = personA;
-console.log(infor.bind(personA)());
-const{address,...other} = personA;
-console.log(other);
+// let {infor} = personA;
+// console.log(infor.bind(personA)());
+// const{address,...other} = personA;
+// console.log(other);
+
+
+// ================array=================
+
+
+
+// var number = [1,2,3,4,5,6,7,8,9,10,11];
+// number.forEach(function(num,index){
+//     console.log("num "+num+" o vi tri thu "+index);
+// })
+// var mappp = number.map((x)=>{
+//     return x*x;
+// });
+// console.log(mappp);
+
+// mappp.forEach(function(value,index){
+//     // console.log('So '+value+' nam o vi tri thu '+index);
+// })
+// var loc = mappp.filter(function(x){
+//     return x%2==0;
+// })
+// console.log(loc);
+// var rec = loc.reduce(function(x,y){
+//     return x+y;
+// },0);
+// var recmap = mappp.reduce(function(x,y){
+//     return x+y;
+// },0);
+// console.log(recmap);
+// console.log(rec);
+
