@@ -31,23 +31,42 @@
 
 
 
-class Person{
-    constructor(id){
-        this._id = id;
-    }
-    info(){
-        console.log("ID: "+this._id);
-    }
-    infoArrow = ()=>{
-        console.log("ID Arrow: "+this._id);
-    }
-}
-let person1 = new Person(10);
+// class Person{
+//     constructor(id){
+//         this._id = id;
+//     }
+//     info(){
+//         console.log("ID: "+this._id);
+//     }
+//     infoArrow = ()=>{
+//         console.log("ID Arrow: "+this._id);
+//     }
+// }
+// let person1 = new Person(10);
 // person1.info();
 // person1.infoArrow();
 
 
-setTimeout(function(){
-    person1.infoArrow();
-    person1.info();
-},500)
+// setTimeout(function(){
+//     person1.infoArrow();
+//     person1.info();
+// },500)
+
+// arguments
+// function sum(){
+//     var tong = 0;
+//     for(let i=0;i<arguments.length;i++){
+//         tong+=arguments[i];
+//     }
+//     return tong;
+// }
+// var s = sum(1,2,3,4,5,6,7,8,9);
+// console.log('Tong__ ' +s);
+
+// var num = [1,2,3,4,5,6,7,8,9,10,11];
+// var sum = num.map(function(x){
+//     return x*2;
+// }).reduce(function(x,y){
+//     return x+y;
+// },0);
+// console.log(sum);
